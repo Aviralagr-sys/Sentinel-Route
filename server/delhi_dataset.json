@@ -11,10 +11,21 @@
         "Deserted road after market closes, no police patrol visible",
         "Dark alleys connecting sectors, isolated and creepy"
       ],
-      "problems": ["dark", "secluded", "deserted", "dark", "isolated", "creepy"],
+      "problems": [
+        "dark",
+        "secluded",
+        "deserted",
+        "dark",
+        "isolated",
+        "creepy"
+      ],
       "lighting": "poor",
-      "tags": ["Low Visibility", "Residential"],
-      "police_patrol": false
+      "tags": [
+        "Low Visibility",
+        "Residential"
+      ],
+      "police_patrol": false,
+      "base_score": 10
     },
     {
       "id": "hauz-khas-village",
@@ -29,8 +40,14 @@
       ],
       "problems": [],
       "lighting": "good",
-      "tags": ["Well-lit", "Crowded", "Market Area", "Police Patrolled"],
-      "police_patrol": true
+      "tags": [
+        "Well-lit",
+        "Crowded",
+        "Market Area",
+        "Police Patrolled"
+      ],
+      "police_patrol": true,
+      "base_score": 100
     },
     {
       "id": "dwarka-sector-12",
@@ -43,10 +60,18 @@
         "Some secluded spots near the boundary wall",
         "Good connectivity but dark parking areas"
       ],
-      "problems": ["dark", "secluded", "dark"],
+      "problems": [
+        "dark",
+        "secluded",
+        "dark"
+      ],
       "lighting": "moderate",
-      "tags": ["Metro Connected", "Residential"],
-      "police_patrol": false
+      "tags": [
+        "Metro Connected",
+        "Residential"
+      ],
+      "police_patrol": false,
+      "base_score": 55
     },
     {
       "id": "connaught-place",
@@ -61,8 +86,14 @@
       ],
       "problems": [],
       "lighting": "excellent",
-      "tags": ["Well-lit", "Police Patrolled", "Crowded", "CCTV Monitored"],
-      "police_patrol": true
+      "tags": [
+        "Well-lit",
+        "Police Patrolled",
+        "Crowded",
+        "CCTV Monitored"
+      ],
+      "police_patrol": true,
+      "base_score": 100
     },
     {
       "id": "karol-bagh",
@@ -75,15 +106,22 @@
         "Generally safe but can feel deserted late night",
         "Good crowd during shopping hours"
       ],
-      "problems": ["dark", "deserted"],
+      "problems": [
+        "dark",
+        "deserted"
+      ],
       "lighting": "moderate",
-      "tags": ["Market Area", "Crowded"],
-      "police_patrol": false
+      "tags": [
+        "Market Area",
+        "Crowded"
+      ],
+      "police_patrol": false,
+      "base_score": 70
     },
     {
       "id": "lajpat-nagar",
       "name": "Lajpat Nagar",
-      "lat": 28.5700,
+      "lat": 28.57,
       "lng": 77.2373,
       "reviews": [
         "Central market is always crowded and well-lit",
@@ -91,10 +129,17 @@
         "Good street food area with lots of foot traffic",
         "Police booth present near the market entrance"
       ],
-      "problems": ["dark", "secluded"],
+      "problems": [
+        "dark",
+        "secluded"
+      ],
       "lighting": "moderate",
-      "tags": ["Market Area", "Crowded"],
-      "police_patrol": true
+      "tags": [
+        "Market Area",
+        "Crowded"
+      ],
+      "police_patrol": true,
+      "base_score": 70
     },
     {
       "id": "saket",
@@ -107,26 +152,43 @@
         "Residential lanes are moderate with some dark patches",
         "Good metro connectivity"
       ],
-      "problems": ["dark"],
+      "problems": [
+        "dark"
+      ],
       "lighting": "good",
-      "tags": ["Well-lit", "CCTV Monitored", "Metro Connected"],
-      "police_patrol": true
+      "tags": [
+        "Well-lit",
+        "CCTV Monitored",
+        "Metro Connected"
+      ],
+      "police_patrol": true,
+      "base_score": 85
     },
     {
       "id": "vasant-kunj",
       "name": "Vasant Kunj",
       "lat": 28.5206,
-      "lng": 77.1570,
+      "lng": 77.157,
       "reviews": [
         "Near the ridge area feels very isolated and unsafe",
         "Dark stretches along the main road at night",
         "No lighting near the construction sites",
         "Creepy vibes near the forested patches"
       ],
-      "problems": ["isolated", "unsafe", "dark", "no lighting", "creepy"],
+      "problems": [
+        "isolated",
+        "unsafe",
+        "dark",
+        "no lighting",
+        "creepy"
+      ],
       "lighting": "poor",
-      "tags": ["Low Visibility", "Near Forest Area"],
-      "police_patrol": false
+      "tags": [
+        "Low Visibility",
+        "Near Forest Area"
+      ],
+      "police_patrol": false,
+      "base_score": 25
     },
     {
       "id": "chandni-chowk",
@@ -141,8 +203,14 @@
       ],
       "problems": [],
       "lighting": "good",
-      "tags": ["Well-lit", "Crowded", "Historic", "Police Patrolled"],
-      "police_patrol": true
+      "tags": [
+        "Well-lit",
+        "Crowded",
+        "Historic",
+        "Police Patrolled"
+      ],
+      "police_patrol": true,
+      "base_score": 100
     },
     {
       "id": "nehru-place",
@@ -155,10 +223,18 @@
         "Dark parking areas feel unsafe",
         "Isolated lanes near the back of the market"
       ],
-      "problems": ["deserted", "dark", "unsafe", "isolated"],
+      "problems": [
+        "deserted",
+        "dark",
+        "unsafe",
+        "isolated"
+      ],
       "lighting": "moderate",
-      "tags": ["Commercial Area"],
-      "police_patrol": false
+      "tags": [
+        "Commercial Area"
+      ],
+      "police_patrol": false,
+      "base_score": 40
     },
     {
       "id": "greater-kailash",
@@ -173,8 +249,13 @@
       ],
       "problems": [],
       "lighting": "good",
-      "tags": ["Well-lit", "Police Patrolled", "Residential"],
-      "police_patrol": true
+      "tags": [
+        "Well-lit",
+        "Police Patrolled",
+        "Residential"
+      ],
+      "police_patrol": true,
+      "base_score": 100
     },
     {
       "id": "janakpuri",
@@ -187,15 +268,22 @@
         "Secluded areas near the Dabri border",
         "Generally moderate safety levels"
       ],
-      "problems": ["dark", "secluded"],
+      "problems": [
+        "dark",
+        "secluded"
+      ],
       "lighting": "moderate",
-      "tags": ["Residential", "Metro Connected"],
-      "police_patrol": false
+      "tags": [
+        "Residential",
+        "Metro Connected"
+      ],
+      "police_patrol": false,
+      "base_score": 70
     },
     {
       "id": "pitampura",
       "name": "Pitampura",
-      "lat": 28.7030,
+      "lat": 28.703,
       "lng": 77.1318,
       "reviews": [
         "Main road is well lit with good traffic",
@@ -203,15 +291,23 @@
         "Secluded park areas feel creepy at night",
         "Metro station area is safe and well monitored"
       ],
-      "problems": ["dark", "secluded", "creepy"],
+      "problems": [
+        "dark",
+        "secluded",
+        "creepy"
+      ],
       "lighting": "moderate",
-      "tags": ["Metro Connected", "Residential"],
-      "police_patrol": false
+      "tags": [
+        "Metro Connected",
+        "Residential"
+      ],
+      "police_patrol": false,
+      "base_score": 55
     },
     {
       "id": "defence-colony",
       "name": "Defence Colony",
-      "lat": 28.5730,
+      "lat": 28.573,
       "lng": 77.2313,
       "reviews": [
         "Posh residential area with excellent street lighting",
@@ -221,8 +317,14 @@
       ],
       "problems": [],
       "lighting": "excellent",
-      "tags": ["Well-lit", "Police Patrolled", "CCTV Monitored", "Residential"],
-      "police_patrol": true
+      "tags": [
+        "Well-lit",
+        "Police Patrolled",
+        "CCTV Monitored",
+        "Residential"
+      ],
+      "police_patrol": true,
+      "base_score": 100
     },
     {
       "id": "mayur-vihar",
@@ -235,10 +337,18 @@
         "River bank area feels isolated and dangerous",
         "Good market area during daytime"
       ],
-      "problems": ["dark", "isolated", "dangerous"],
+      "problems": [
+        "dark",
+        "isolated",
+        "dangerous"
+      ],
       "lighting": "moderate",
-      "tags": ["Metro Connected", "Market Area"],
-      "police_patrol": false
+      "tags": [
+        "Metro Connected",
+        "Market Area"
+      ],
+      "police_patrol": false,
+      "base_score": 55
     },
     {
       "id": "south-extension",
@@ -253,8 +363,13 @@
       ],
       "problems": [],
       "lighting": "good",
-      "tags": ["Well-lit", "Crowded", "Market Area"],
-      "police_patrol": true
+      "tags": [
+        "Well-lit",
+        "Crowded",
+        "Market Area"
+      ],
+      "police_patrol": true,
+      "base_score": 100
     },
     {
       "id": "rohini-sector-11",
@@ -267,10 +382,20 @@
         "Dark and secluded lanes near the park boundary",
         "Unsafe for women walking alone after dark"
       ],
-      "problems": ["no lighting", "deserted", "dark", "secluded", "unsafe"],
+      "problems": [
+        "no lighting",
+        "deserted",
+        "dark",
+        "secluded",
+        "unsafe"
+      ],
       "lighting": "poor",
-      "tags": ["Low Visibility", "Residential"],
-      "police_patrol": false
+      "tags": [
+        "Low Visibility",
+        "Residential"
+      ],
+      "police_patrol": false,
+      "base_score": 25
     },
     {
       "id": "green-park",
@@ -285,8 +410,13 @@
       ],
       "problems": [],
       "lighting": "good",
-      "tags": ["Well-lit", "Metro Connected", "Police Patrolled"],
-      "police_patrol": true
+      "tags": [
+        "Well-lit",
+        "Metro Connected",
+        "Police Patrolled"
+      ],
+      "police_patrol": true,
+      "base_score": 100
     },
     {
       "id": "tilak-nagar",
@@ -299,10 +429,17 @@
         "Metro connectivity is good",
         "Some isolated spots near the railway tracks"
       ],
-      "problems": ["dark", "isolated"],
+      "problems": [
+        "dark",
+        "isolated"
+      ],
       "lighting": "moderate",
-      "tags": ["Metro Connected", "Market Area"],
-      "police_patrol": false
+      "tags": [
+        "Metro Connected",
+        "Market Area"
+      ],
+      "police_patrol": false,
+      "base_score": 70
     },
     {
       "id": "old-delhi-jama-masjid",
@@ -317,8 +454,14 @@
       ],
       "problems": [],
       "lighting": "good",
-      "tags": ["Well-lit", "Crowded", "Historic", "Police Patrolled"],
-      "police_patrol": true
+      "tags": [
+        "Well-lit",
+        "Crowded",
+        "Historic",
+        "Police Patrolled"
+      ],
+      "police_patrol": true,
+      "base_score": 100
     },
     {
       "id": "mundka",
@@ -332,10 +475,22 @@
         "Dark and creepy lanes, no police patrol",
         "Very unsafe area especially for solo travelers"
       ],
-      "problems": ["isolated", "dangerous", "no lighting", "deserted", "dark", "creepy", "unsafe"],
+      "problems": [
+        "isolated",
+        "dangerous",
+        "no lighting",
+        "deserted",
+        "dark",
+        "creepy",
+        "unsafe"
+      ],
       "lighting": "poor",
-      "tags": ["Industrial Zone", "Low Visibility"],
-      "police_patrol": false
+      "tags": [
+        "Industrial Zone",
+        "Low Visibility"
+      ],
+      "police_patrol": false,
+      "base_score": -5
     },
     {
       "id": "khan-market",
@@ -350,8 +505,14 @@
       ],
       "problems": [],
       "lighting": "excellent",
-      "tags": ["Well-lit", "Police Patrolled", "CCTV Monitored", "Crowded"],
-      "police_patrol": true
+      "tags": [
+        "Well-lit",
+        "Police Patrolled",
+        "CCTV Monitored",
+        "Crowded"
+      ],
+      "police_patrol": true,
+      "base_score": 100
     },
     {
       "id": "okhla-industrial",
@@ -364,10 +525,21 @@
         "No lighting in most internal roads",
         "Isolated from residential areas, feels unsafe"
       ],
-      "problems": ["dark", "secluded", "dangerous", "no lighting", "isolated", "unsafe"],
+      "problems": [
+        "dark",
+        "secluded",
+        "dangerous",
+        "no lighting",
+        "isolated",
+        "unsafe"
+      ],
       "lighting": "poor",
-      "tags": ["Industrial Zone", "Low Visibility"],
-      "police_patrol": false
+      "tags": [
+        "Industrial Zone",
+        "Low Visibility"
+      ],
+      "police_patrol": false,
+      "base_score": 10
     },
     {
       "id": "rajouri-garden",
@@ -380,16 +552,24 @@
         "Some dark patches in residential lanes",
         "Generally safe for evening outings"
       ],
-      "problems": ["dark"],
+      "problems": [
+        "dark"
+      ],
       "lighting": "good",
-      "tags": ["Well-lit", "Crowded", "Metro Connected", "Market Area"],
-      "police_patrol": false
+      "tags": [
+        "Well-lit",
+        "Crowded",
+        "Metro Connected",
+        "Market Area"
+      ],
+      "police_patrol": false,
+      "base_score": 85
     },
     {
       "id": "igi-airport-area",
       "name": "IGI Airport Area",
       "lat": 28.5562,
-      "lng": 77.1000,
+      "lng": 77.1,
       "reviews": [
         "Well-lit highway with CCTV monitoring",
         "Heavy security near terminal areas",
@@ -398,11 +578,26 @@
       ],
       "problems": [],
       "lighting": "excellent",
-      "tags": ["Well-lit", "Police Patrolled", "CCTV Monitored", "Highway"],
-      "police_patrol": true
+      "tags": [
+        "Well-lit",
+        "Police Patrolled",
+        "CCTV Monitored",
+        "Highway"
+      ],
+      "police_patrol": true,
+      "base_score": 100
     }
   ],
-  "negative_keywords": ["dark", "secluded", "deserted", "unsafe", "no lighting", "isolated", "creepy", "dangerous"],
+  "negative_keywords": [
+    "dark",
+    "secluded",
+    "deserted",
+    "unsafe",
+    "no lighting",
+    "isolated",
+    "creepy",
+    "dangerous"
+  ],
   "deduction_per_keyword": 15,
   "routes": [
     {
@@ -411,12 +606,23 @@
       "start": "rohini-sector-3",
       "end": "connaught-place",
       "fastest_route": {
-        "waypoints": ["rohini-sector-3", "pitampura", "karol-bagh", "connaught-place"],
+        "waypoints": [
+          "rohini-sector-3",
+          "pitampura",
+          "karol-bagh",
+          "connaught-place"
+        ],
         "distance_km": 18.5,
         "eta_minutes": 45
       },
       "safe_route": {
-        "waypoints": ["rohini-sector-3", "pitampura", "rajouri-garden", "karol-bagh", "connaught-place"],
+        "waypoints": [
+          "rohini-sector-3",
+          "pitampura",
+          "rajouri-garden",
+          "karol-bagh",
+          "connaught-place"
+        ],
         "distance_km": 22.3,
         "eta_minutes": 55
       }
@@ -427,12 +633,23 @@
       "start": "dwarka-sector-12",
       "end": "saket",
       "fastest_route": {
-        "waypoints": ["dwarka-sector-12", "janakpuri", "vasant-kunj", "saket"],
+        "waypoints": [
+          "dwarka-sector-12",
+          "janakpuri",
+          "vasant-kunj",
+          "saket"
+        ],
         "distance_km": 16.2,
         "eta_minutes": 40
       },
       "safe_route": {
-        "waypoints": ["dwarka-sector-12", "janakpuri", "rajouri-garden", "green-park", "saket"],
+        "waypoints": [
+          "dwarka-sector-12",
+          "janakpuri",
+          "rajouri-garden",
+          "green-park",
+          "saket"
+        ],
         "distance_km": 21.0,
         "eta_minutes": 52
       }
@@ -443,12 +660,23 @@
       "start": "nehru-place",
       "end": "khan-market",
       "fastest_route": {
-        "waypoints": ["nehru-place", "greater-kailash", "defence-colony", "khan-market"],
+        "waypoints": [
+          "nehru-place",
+          "greater-kailash",
+          "defence-colony",
+          "khan-market"
+        ],
         "distance_km": 8.5,
         "eta_minutes": 22
       },
       "safe_route": {
-        "waypoints": ["nehru-place", "greater-kailash", "south-extension", "defence-colony", "khan-market"],
+        "waypoints": [
+          "nehru-place",
+          "greater-kailash",
+          "south-extension",
+          "defence-colony",
+          "khan-market"
+        ],
         "distance_km": 10.2,
         "eta_minutes": 28
       }
@@ -459,12 +687,23 @@
       "start": "lajpat-nagar",
       "end": "connaught-place",
       "fastest_route": {
-        "waypoints": ["lajpat-nagar", "defence-colony", "khan-market", "connaught-place"],
+        "waypoints": [
+          "lajpat-nagar",
+          "defence-colony",
+          "khan-market",
+          "connaught-place"
+        ],
         "distance_km": 9.8,
         "eta_minutes": 25
       },
       "safe_route": {
-        "waypoints": ["lajpat-nagar", "south-extension", "green-park", "hauz-khas-village", "connaught-place"],
+        "waypoints": [
+          "lajpat-nagar",
+          "south-extension",
+          "green-park",
+          "hauz-khas-village",
+          "connaught-place"
+        ],
         "distance_km": 13.5,
         "eta_minutes": 35
       }
@@ -475,12 +714,22 @@
       "start": "mundka",
       "end": "rohini-sector-3",
       "fastest_route": {
-        "waypoints": ["mundka", "tilak-nagar", "janakpuri", "rohini-sector-3"],
+        "waypoints": [
+          "mundka",
+          "tilak-nagar",
+          "janakpuri",
+          "rohini-sector-3"
+        ],
         "distance_km": 14.0,
         "eta_minutes": 35
       },
       "safe_route": {
-        "waypoints": ["mundka", "rajouri-garden", "pitampura", "rohini-sector-3"],
+        "waypoints": [
+          "mundka",
+          "rajouri-garden",
+          "pitampura",
+          "rohini-sector-3"
+        ],
         "distance_km": 18.5,
         "eta_minutes": 48
       }
@@ -491,12 +740,23 @@
       "start": "mayur-vihar",
       "end": "connaught-place",
       "fastest_route": {
-        "waypoints": ["mayur-vihar", "nehru-place", "defence-colony", "connaught-place"],
+        "waypoints": [
+          "mayur-vihar",
+          "nehru-place",
+          "defence-colony",
+          "connaught-place"
+        ],
         "distance_km": 14.5,
         "eta_minutes": 35
       },
       "safe_route": {
-        "waypoints": ["mayur-vihar", "greater-kailash", "south-extension", "khan-market", "connaught-place"],
+        "waypoints": [
+          "mayur-vihar",
+          "greater-kailash",
+          "south-extension",
+          "khan-market",
+          "connaught-place"
+        ],
         "distance_km": 18.0,
         "eta_minutes": 45
       }
@@ -507,12 +767,22 @@
       "start": "okhla-industrial",
       "end": "saket",
       "fastest_route": {
-        "waypoints": ["okhla-industrial", "nehru-place", "saket"],
+        "waypoints": [
+          "okhla-industrial",
+          "nehru-place",
+          "saket"
+        ],
         "distance_km": 7.5,
         "eta_minutes": 20
       },
       "safe_route": {
-        "waypoints": ["okhla-industrial", "greater-kailash", "defence-colony", "green-park", "saket"],
+        "waypoints": [
+          "okhla-industrial",
+          "greater-kailash",
+          "defence-colony",
+          "green-park",
+          "saket"
+        ],
         "distance_km": 12.0,
         "eta_minutes": 32
       }
@@ -523,12 +793,24 @@
       "start": "chandni-chowk",
       "end": "hauz-khas-village",
       "fastest_route": {
-        "waypoints": ["chandni-chowk", "connaught-place", "green-park", "hauz-khas-village"],
+        "waypoints": [
+          "chandni-chowk",
+          "connaught-place",
+          "green-park",
+          "hauz-khas-village"
+        ],
         "distance_km": 13.0,
         "eta_minutes": 35
       },
       "safe_route": {
-        "waypoints": ["chandni-chowk", "old-delhi-jama-masjid", "connaught-place", "khan-market", "green-park", "hauz-khas-village"],
+        "waypoints": [
+          "chandni-chowk",
+          "old-delhi-jama-masjid",
+          "connaught-place",
+          "khan-market",
+          "green-park",
+          "hauz-khas-village"
+        ],
         "distance_km": 15.5,
         "eta_minutes": 42
       }
