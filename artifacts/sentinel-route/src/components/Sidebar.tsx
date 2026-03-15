@@ -2,11 +2,13 @@ import { useState } from "react";
 import type { Area, Route, RouteListItem } from "@/lib/types";
 
 interface SidebarProps {
+  areas: Area[];
   routes: RouteListItem[];
   selectedRoute: Route | null;
   temporalMode: boolean;
   onTemporalToggle: (val: boolean) => void;
   onRouteSelect: (routeId: string) => void;
+  onStartEndRoute: (start: string, end: string) => void;
   selectedArea: Area | null;
   loading: boolean;
 }
@@ -40,7 +42,6 @@ function TagPill({ tag }: { tag: string }) {
     "Highway": "bg-sky-50 text-sky-700 border-sky-200",
     "Commercial Area": "bg-teal-50 text-teal-700 border-teal-200",
   };
-
   const classes = colorMap[tag] || "bg-gray-50 text-gray-700 border-gray-200";
 
   return (
@@ -51,15 +52,27 @@ function TagPill({ tag }: { tag: string }) {
 }
 
 export default function Sidebar({
+  areas,
   routes,
   selectedRoute,
   temporalMode,
   onTemporalToggle,
   onRouteSelect,
+  onStartEndRoute,
   selectedArea,
   loading,
 }: SidebarProps) {
-  const [expanded, setExpanded] = useState<string | null>(null);
+  const [startArea, setStartArea] = useState("");
+  const [endArea, setEndArea] = useState("");
+  const [tab, setTab] = useState<"picker" | "presets">("picker");
+
+  const sortedAreas = [...areas].sort((a, b) => a.name.localeCompare(b.name));
+
+  const handleFindRoute = () => {
+    if (startArea && endArea && startArea !== endArea) {
+      onStartEndRoute(startArea, endArea);
+    }
+  };
 
   return (
     <div className="h-full flex flex-col bg-white">
@@ -96,31 +109,102 @@ export default function Sidebar({
         </div>
       </div>
 
+      <div className="flex border-b border-gray-200">
+        <button
+          onClick={() => setTab("picker")}
+          className={`flex-1 py-2 text-xs font-semibold uppercase tracking-wider transition-colors ${
+            tab === "picker"
+              ? "text-blue-600 border-b-2 border-blue-600 bg-blue-50"
+              : "text-gray-500 hover:text-gray-700"
+          }`}
+        >
+          Find Route
+        </button>
+        <button
+          onClick={() => setTab("presets")}
+          className={`flex-1 py-2 text-xs font-semibold uppercase tracking-wider transition-colors ${
+            tab === "presets"
+              ? "text-blue-600 border-b-2 border-blue-600 bg-blue-50"
+              : "text-gray-500 hover:text-gray-700"
+          }`}
+        >
+          Preset Routes
+        </button>
+      </div>
+
       <div className="flex-1 overflow-y-auto">
-        <div className="p-4">
-          <h2 className="text-sm font-semibold text-gray-700 uppercase tracking-wider mb-3">Select Route</h2>
-          <div className="space-y-2">
-            {routes.map((route) => (
-              <button
-                key={route.id}
-                onClick={() => {
-                  onRouteSelect(route.id);
-                  setExpanded(route.id);
-                }}
-                className={`w-full text-left p-3 rounded-lg border transition-all ${
-                  expanded === route.id
-                    ? "border-blue-300 bg-blue-50 shadow-sm"
-                    : "border-gray-200 bg-white hover:border-gray-300 hover:bg-gray-50"
-                }`}
+        {tab === "picker" && (
+          <div className="p-4 space-y-3">
+            <div>
+              <label className="block text-xs font-semibold text-gray-600 uppercase tracking-wider mb-1">Start Location</label>
+              <select
+                value={startArea}
+                onChange={(e) => setStartArea(e.target.value)}
+                className="w-full border border-gray-300 rounded-lg px-3 py-2 text-sm bg-white focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500"
               >
-                <div className="text-sm font-medium text-gray-900">{route.name}</div>
-                <div className="text-xs text-gray-500 mt-0.5">
-                  {route.fastest_route.distance_km} km · {route.fastest_route.eta_minutes} min fastest
-                </div>
-              </button>
-            ))}
+                <option value="">Select start location...</option>
+                {sortedAreas.map((area) => (
+                  <option key={area.id} value={area.id}>
+                    {area.name} (Score: {area.score})
+                  </option>
+                ))}
+              </select>
+            </div>
+
+            <div>
+              <label className="block text-xs font-semibold text-gray-600 uppercase tracking-wider mb-1">End Location</label>
+              <select
+                value={endArea}
+                onChange={(e) => setEndArea(e.target.value)}
+                className="w-full border border-gray-300 rounded-lg px-3 py-2 text-sm bg-white focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500"
+              >
+                <option value="">Select end location...</option>
+                {sortedAreas
+                  .filter((a) => a.id !== startArea)
+                  .map((area) => (
+                    <option key={area.id} value={area.id}>
+                      {area.name} (Score: {area.score})
+                    </option>
+                  ))}
+              </select>
+            </div>
+
+            <button
+              onClick={handleFindRoute}
+              disabled={!startArea || !endArea || startArea === endArea || loading}
+              className="w-full bg-blue-600 text-white rounded-lg py-2.5 text-sm font-semibold hover:bg-blue-700 disabled:bg-gray-300 disabled:cursor-not-allowed transition-colors"
+            >
+              {loading ? "Finding Safe Route..." : "Find Safe Route"}
+            </button>
+
+            {startArea && endArea && startArea === endArea && (
+              <p className="text-xs text-red-500">Start and end locations must be different</p>
+            )}
           </div>
-        </div>
+        )}
+
+        {tab === "presets" && (
+          <div className="p-4">
+            <div className="space-y-2">
+              {routes.map((route) => (
+                <button
+                  key={route.id}
+                  onClick={() => onRouteSelect(route.id)}
+                  className={`w-full text-left p-3 rounded-lg border transition-all ${
+                    selectedRoute?.id === route.id
+                      ? "border-blue-300 bg-blue-50 shadow-sm"
+                      : "border-gray-200 bg-white hover:border-gray-300 hover:bg-gray-50"
+                  }`}
+                >
+                  <div className="text-sm font-medium text-gray-900">{route.name}</div>
+                  <div className="text-xs text-gray-500 mt-0.5">
+                    {route.fastest_route.distance_km} km · {route.fastest_route.eta_minutes} min fastest
+                  </div>
+                </button>
+              ))}
+            </div>
+          </div>
+        )}
 
         {loading && (
           <div className="p-4 border-t border-gray-200">
@@ -136,7 +220,9 @@ export default function Sidebar({
 
         {selectedRoute && !loading && (
           <div className="p-4 border-t border-gray-200 space-y-4">
-            <h2 className="text-sm font-semibold text-gray-700 uppercase tracking-wider">Route Comparison</h2>
+            <h2 className="text-sm font-semibold text-gray-700 uppercase tracking-wider">
+              {selectedRoute.name}
+            </h2>
 
             <div className="rounded-lg border border-red-200 bg-red-50 p-3">
               <div className="flex items-center justify-between mb-2">

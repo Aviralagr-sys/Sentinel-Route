@@ -14,6 +14,15 @@ export async function fetchRoutes(): Promise<RouteListItem[]> {
   return data.routes;
 }
 
+export async function fetchRouteByPoints(start: string, end: string, temporal: boolean): Promise<Route> {
+  const res = await fetch(`${BASE}/pyapi/route?start=${encodeURIComponent(start)}&end=${encodeURIComponent(end)}&temporal=${temporal}`);
+  if (!res.ok) {
+    const err = await res.json();
+    throw new Error(err.detail || "Failed to fetch route");
+  }
+  return res.json();
+}
+
 export async function fetchRoute(routeId: string, temporal: boolean): Promise<Route> {
   const res = await fetch(`${BASE}/pyapi/route/${routeId}?temporal=${temporal}`);
   return res.json();

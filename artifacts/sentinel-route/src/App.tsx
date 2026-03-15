@@ -1,7 +1,7 @@
 import { useState, useEffect, useCallback } from "react";
 import SafetyMap from "@/components/SafetyMap";
 import Sidebar from "@/components/Sidebar";
-import { fetchAreas, fetchRoutes, fetchRoute } from "@/lib/api";
+import { fetchAreas, fetchRoutes, fetchRoute, fetchRouteByPoints } from "@/lib/api";
 import type { Area, Route, RouteListItem } from "@/lib/types";
 
 function App() {
@@ -33,6 +33,22 @@ function App() {
     [temporalMode]
   );
 
+  const handleStartEndRoute = useCallback(
+    async (start: string, end: string) => {
+      setLoading(true);
+      setSelectedArea(null);
+      try {
+        const route = await fetchRouteByPoints(start, end, temporalMode);
+        setSelectedRoute(route);
+      } catch (err) {
+        console.error(err);
+      } finally {
+        setLoading(false);
+      }
+    },
+    [temporalMode]
+  );
+
   const handleAreaClick = useCallback((area: Area) => {
     setSelectedArea(area);
     setSelectedRoute(null);
@@ -43,8 +59,11 @@ function App() {
       setTemporalMode(val);
       if (selectedRoute) {
         setLoading(true);
-        fetchRoute(selectedRoute.id, val)
+        fetchRouteByPoints(selectedRoute.start, selectedRoute.end, val)
           .then(setSelectedRoute)
+          .catch(() => {
+            fetchRoute(selectedRoute.id, val).then(setSelectedRoute);
+          })
           .finally(() => setLoading(false));
       }
     },
@@ -80,11 +99,13 @@ function App() {
       </div>
       <div className="w-[380px] border-l border-gray-200 shadow-lg flex-shrink-0">
         <Sidebar
+          areas={areas}
           routes={routes}
           selectedRoute={selectedRoute}
           temporalMode={temporalMode}
           onTemporalToggle={handleTemporalToggle}
           onRouteSelect={handleRouteSelect}
+          onStartEndRoute={handleStartEndRoute}
           selectedArea={selectedArea}
           loading={loading}
         />
