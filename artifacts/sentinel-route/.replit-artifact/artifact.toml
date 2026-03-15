@@ -1,0 +1,31 @@
+kind = "web"
+previewPath = "/"
+title = "Sentinel Route"
+version = "1.0.0"
+id = "artifacts/sentinel-route"
+router = "path"
+
+[[integratedSkills]]
+name = "react-vite"
+version = "1.0.0"
+
+[[services]]
+localPort = 23979
+name = "web"
+paths = ["/"]
+
+[services.development]
+run = "pnpm --filter @workspace/sentinel-route run dev"
+
+[services.env]
+PORT = "23979"
+BASE_PATH = "/"
+
+[services.production]
+build = ["pnpm", "--filter", "@workspace/sentinel-route", "run", "build"]
+publicDir = "artifacts/sentinel-route/dist/public"
+serve = "static"
+
+[[services.production.rewrites]]
+from = "/*"
+to = "/index.html"
