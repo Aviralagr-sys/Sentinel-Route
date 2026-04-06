@@ -107,6 +107,17 @@ function App() {
             </svg>
             Compare Models
           </a>
+          <a
+            href="/scores.html"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="flex items-center gap-1.5 text-xs font-semibold text-indigo-700 hover:text-indigo-900 transition-colors bg-indigo-50 hover:bg-indigo-100 px-2.5 py-1 rounded-md border border-indigo-200"
+          >
+            <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
+              <circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/>
+            </svg>
+            Model Scores
+          </a>
         </div>
       </div>
       <div className="w-[380px] border-l border-gray-200 shadow-lg flex-shrink-0">
