@@ -1,0 +1,9 @@
+route_id,route_name,start_area,end_area,fastest_waypoints,fastest_distance_km,fastest_eta_min,fastest_avg_score,safest_waypoints,safest_distance_km,safest_eta_min,safest_avg_score
+rohini-to-cp,Rohini to Connaught Place,rohini-sector-3,connaught-place,rohini-sector-3→pitampura→karol-bagh→connaught-place,18.5,45,,,,,
+dwarka-to-saket,Dwarka to Saket,dwarka-sector-12,saket,dwarka-sector-12→janakpuri→vasant-kunj→saket,16.2,40,,,,,
+nehru-place-to-khan-market,Nehru Place to Khan Market,nehru-place,khan-market,nehru-place→greater-kailash→defence-colony→khan-market,8.5,22,,,,,
+lajpat-nagar-to-cp,Lajpat Nagar to Connaught Place,lajpat-nagar,connaught-place,lajpat-nagar→defence-colony→khan-market→connaught-place,9.8,25,,,,,
+mundka-to-rohini,Mundka to Rohini,mundka,rohini-sector-3,mundka→tilak-nagar→janakpuri→rohini-sector-3,14.0,35,,,,,
+mayur-vihar-to-cp,Mayur Vihar to Connaught Place,mayur-vihar,connaught-place,mayur-vihar→nehru-place→defence-colony→connaught-place,14.5,35,,,,,
+okhla-to-saket,Okhla to Saket,okhla-industrial,saket,okhla-industrial→nehru-place→saket,7.5,20,,,,,
+chandni-chowk-to-hauz-khas,Chandni Chowk to Hauz Khas,chandni-chowk,hauz-khas-village,chandni-chowk→connaught-place→green-park→hauz-khas-village,13.0,35,,,,,

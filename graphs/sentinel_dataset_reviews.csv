@@ -1,0 +1,102 @@
+sample_id,area_id,area_name,review_text,lighting_label,lighting_code,police_patrol,keywords_found,keyword_count,area_score,safety_class
+1,rohini-sector-3,Rohini Sector 3,"Very dark streets after 8 PM, no streetlights working",poor,0,0,dark,1,10,Unsafe
+2,rohini-sector-3,Rohini Sector 3,"Secluded lanes near the park, feels unsafe at night",poor,0,0,secluded|unsafe,2,10,Unsafe
+3,rohini-sector-3,Rohini Sector 3,"Deserted road after market closes, no police patrol visible",poor,0,0,deserted,1,10,Unsafe
+4,rohini-sector-3,Rohini Sector 3,"Dark alleys connecting sectors, isolated and creepy",poor,0,0,dark|isolated|creepy,3,10,Unsafe
+5,hauz-khas-village,Hauz Khas Village,Well-lit area with lots of restaurants and cafes,good,2,1,,0,100,Safe
+6,hauz-khas-village,Hauz Khas Village,"Crowded market area, very safe during evening",good,2,1,,0,100,Safe
+7,hauz-khas-village,Hauz Khas Village,Good police presence near the main road,good,2,1,,0,100,Safe
+8,hauz-khas-village,Hauz Khas Village,"Popular tourist spot, well maintained paths",good,2,1,,0,100,Safe
+9,dwarka-sector-12,Dwarka Sector 12,Metro station area is well lit and crowded,moderate,1,0,,0,70,Moderate
+10,dwarka-sector-12,Dwarka Sector 12,Internal lanes are dark after 9 PM,moderate,1,0,dark,1,70,Moderate
+11,dwarka-sector-12,Dwarka Sector 12,Some secluded spots near the boundary wall,moderate,1,0,secluded,1,70,Moderate
+12,dwarka-sector-12,Dwarka Sector 12,Good connectivity but dark parking areas,moderate,1,0,dark,1,70,Moderate
+13,connaught-place,Connaught Place,Extremely well-lit commercial area,excellent,1,1,,0,100,Safe
+14,connaught-place,Connaught Place,Heavy police patrolling round the clock,excellent,1,1,,0,100,Safe
+15,connaught-place,Connaught Place,"Crowded even late at night, very safe",excellent,1,1,,0,100,Safe
+16,connaught-place,Connaught Place,Well-maintained walkways and CCTV coverage,excellent,1,1,,0,100,Safe
+17,karol-bagh,Karol Bagh,Busy market area during daytime,moderate,1,0,,0,70,Moderate
+18,karol-bagh,Karol Bagh,Some dark lanes behind main market after closing hours,moderate,1,0,dark,1,70,Moderate
+19,karol-bagh,Karol Bagh,Generally safe but can feel deserted late night,moderate,1,0,deserted,1,70,Moderate
+20,karol-bagh,Karol Bagh,Good crowd during shopping hours,moderate,1,0,,0,70,Moderate
+21,lajpat-nagar,Lajpat Nagar,Central market is always crowded and well-lit,moderate,1,1,,0,70,Moderate
+22,lajpat-nagar,Lajpat Nagar,Side lanes can be dark and secluded at night,moderate,1,1,dark|secluded,2,70,Moderate
+23,lajpat-nagar,Lajpat Nagar,Good street food area with lots of foot traffic,moderate,1,1,,0,70,Moderate
+24,lajpat-nagar,Lajpat Nagar,Police booth present near the market entrance,moderate,1,1,,0,70,Moderate
+25,saket,Saket,Select City Walk area is very well-lit and safe,good,2,1,,0,85,Safe
+26,saket,Saket,Mall area has heavy security and CCTV,good,2,1,,0,85,Safe
+27,saket,Saket,Residential lanes are moderate with some dark patches,good,2,1,dark,1,85,Safe
+28,saket,Saket,Good metro connectivity,good,2,1,,0,85,Safe
+29,vasant-kunj,Vasant Kunj,Near the ridge area feels very isolated and unsafe,poor,0,0,unsafe|isolated,2,25,Unsafe
+30,vasant-kunj,Vasant Kunj,Dark stretches along the main road at night,poor,0,0,dark,1,25,Unsafe
+31,vasant-kunj,Vasant Kunj,No lighting near the construction sites,poor,0,0,no lighting,1,25,Unsafe
+32,vasant-kunj,Vasant Kunj,Creepy vibes near the forested patches,poor,0,0,creepy,1,25,Unsafe
+33,chandni-chowk,Chandni Chowk,"Extremely crowded during the day, safe for walking",good,2,1,,0,100,Safe
+34,chandni-chowk,Chandni Chowk,Historic area with lots of shops and vendors,good,2,1,,0,100,Safe
+35,chandni-chowk,Chandni Chowk,Narrow lanes but always bustling with people,good,2,1,,0,100,Safe
+36,chandni-chowk,Chandni Chowk,Police presence near Red Fort entrance,good,2,1,,0,100,Safe
+37,nehru-place,Nehru Place,IT market area is well lit during business hours,moderate,1,0,,0,40,Caution
+38,nehru-place,Nehru Place,After 7 PM the area becomes completely deserted,moderate,1,0,deserted,1,40,Caution
+39,nehru-place,Nehru Place,Dark parking areas feel unsafe,moderate,1,0,dark|unsafe,2,40,Caution
+40,nehru-place,Nehru Place,Isolated lanes near the back of the market,moderate,1,0,isolated,1,40,Caution
+41,greater-kailash,Greater Kailash,M Block market is well-lit and safe,good,2,1,,0,100,Safe
+42,greater-kailash,Greater Kailash,Residential area has good street lighting,good,2,1,,0,100,Safe
+43,greater-kailash,Greater Kailash,Regular police patrolling observed,good,2,1,,0,100,Safe
+44,greater-kailash,Greater Kailash,Safe for evening walks,good,2,1,,0,100,Safe
+45,janakpuri,Janakpuri,District Centre area is well maintained,moderate,1,0,,0,70,Moderate
+46,janakpuri,Janakpuri,Some dark stretches near C-block park,moderate,1,0,dark,1,70,Moderate
+47,janakpuri,Janakpuri,Secluded areas near the Dabri border,moderate,1,0,secluded,1,70,Moderate
+48,janakpuri,Janakpuri,Generally moderate safety levels,moderate,1,0,,0,70,Moderate
+49,pitampura,Pitampura,Main road is well lit with good traffic,moderate,1,0,,0,55,Caution
+50,pitampura,Pitampura,Internal colony roads are dark after 10 PM,moderate,1,0,dark,1,55,Caution
+51,pitampura,Pitampura,Secluded park areas feel creepy at night,moderate,1,0,secluded|creepy,2,55,Caution
+52,pitampura,Pitampura,Metro station area is safe and well monitored,moderate,1,0,,0,55,Caution
+53,defence-colony,Defence Colony,Posh residential area with excellent street lighting,excellent,1,1,,0,100,Safe
+54,defence-colony,Defence Colony,Market area is safe and well-patrolled,excellent,1,1,,0,100,Safe
+55,defence-colony,Defence Colony,CCTV cameras at major intersections,excellent,1,1,,0,100,Safe
+56,defence-colony,Defence Colony,Very safe for solo travelers,excellent,1,1,,0,100,Safe
+57,mayur-vihar,Mayur Vihar Phase 1,Metro station area well lit and crowded,moderate,1,0,,0,55,Caution
+58,mayur-vihar,Mayur Vihar Phase 1,Phase 1 extension has some dark lanes,moderate,1,0,dark,1,55,Caution
+59,mayur-vihar,Mayur Vihar Phase 1,River bank area feels isolated and dangerous,moderate,1,0,isolated|dangerous,2,55,Caution
+60,mayur-vihar,Mayur Vihar Phase 1,Good market area during daytime,moderate,1,0,,0,55,Caution
+61,south-extension,South Extension,Popular shopping area with good lighting,good,2,1,,0,100,Safe
+62,south-extension,South Extension,Always crowded during market hours,good,2,1,,0,100,Safe
+63,south-extension,South Extension,Well-maintained roads and footpaths,good,2,1,,0,100,Safe
+64,south-extension,South Extension,Police presence during peak hours,good,2,1,,0,100,Safe
+65,rohini-sector-11,Rohini Sector 11,Japanese Park area has no lighting at night,poor,0,0,no lighting,1,25,Unsafe
+66,rohini-sector-11,Rohini Sector 11,Deserted roads after 9 PM,poor,0,0,deserted,1,25,Unsafe
+67,rohini-sector-11,Rohini Sector 11,Dark and secluded lanes near the park boundary,poor,0,0,dark|secluded,2,25,Unsafe
+68,rohini-sector-11,Rohini Sector 11,Unsafe for women walking alone after dark,poor,0,0,dark|unsafe,2,25,Unsafe
+69,green-park,Green Park,Metro station area is safe and well lit,good,2,1,,0,100,Safe
+70,green-park,Green Park,Main market has good foot traffic,good,2,1,,0,100,Safe
+71,green-park,Green Park,Residential lanes are moderately lit,good,2,1,,0,100,Safe
+72,green-park,Green Park,Police patrol visible during evening,good,2,1,,0,100,Safe
+73,tilak-nagar,Tilak Nagar,Market area is busy and safe during day,moderate,1,0,,0,70,Moderate
+74,tilak-nagar,Tilak Nagar,After market hours some lanes become dark,moderate,1,0,dark,1,70,Moderate
+75,tilak-nagar,Tilak Nagar,Metro connectivity is good,moderate,1,0,,0,70,Moderate
+76,tilak-nagar,Tilak Nagar,Some isolated spots near the railway tracks,moderate,1,0,isolated,1,70,Moderate
+77,old-delhi-jama-masjid,Old Delhi - Jama Masjid,Extremely crowded area with narrow streets,good,2,1,,0,100,Safe
+78,old-delhi-jama-masjid,Old Delhi - Jama Masjid,Well-lit bazaar area with constant foot traffic,good,2,1,,0,100,Safe
+79,old-delhi-jama-masjid,Old Delhi - Jama Masjid,Historic monument area has police presence,good,2,1,,0,100,Safe
+80,old-delhi-jama-masjid,Old Delhi - Jama Masjid,Street food lanes are vibrant and safe,good,2,1,,0,100,Safe
+81,mundka,Mundka,Industrial area feels very isolated and dangerous,poor,0,0,isolated|dangerous,2,10,Unsafe
+82,mundka,Mundka,No street lighting on most roads,poor,0,0,,0,10,Unsafe
+83,mundka,Mundka,Deserted after factory hours,poor,0,0,deserted,1,10,Unsafe
+84,mundka,Mundka,"Dark and creepy lanes, no police patrol",poor,0,0,dark|creepy,2,10,Unsafe
+85,mundka,Mundka,Very unsafe area especially for solo travelers,poor,0,0,unsafe,1,10,Unsafe
+86,khan-market,Khan Market,One of the safest markets in Delhi,excellent,1,1,,0,100,Safe
+87,khan-market,Khan Market,Excellent lighting and CCTV coverage,excellent,1,1,,0,100,Safe
+88,khan-market,Khan Market,Heavy police presence at all times,excellent,1,1,,0,100,Safe
+89,khan-market,Khan Market,"Popular with diplomats and expats, very well maintained",excellent,1,1,,0,100,Safe
+90,okhla-industrial,Okhla Industrial Area,Dark factory roads after working hours,poor,0,0,dark,1,10,Unsafe
+91,okhla-industrial,Okhla Industrial Area,Secluded and dangerous after 7 PM,poor,0,0,secluded|dangerous,2,10,Unsafe
+92,okhla-industrial,Okhla Industrial Area,No lighting in most internal roads,poor,0,0,no lighting,1,10,Unsafe
+93,okhla-industrial,Okhla Industrial Area,"Isolated from residential areas, feels unsafe",poor,0,0,unsafe|isolated,2,10,Unsafe
+94,rajouri-garden,Rajouri Garden,Market area is bustling and well-lit,good,2,0,,0,85,Safe
+95,rajouri-garden,Rajouri Garden,Metro station brings good crowd,good,2,0,,0,85,Safe
+96,rajouri-garden,Rajouri Garden,Some dark patches in residential lanes,good,2,0,dark,1,85,Safe
+97,rajouri-garden,Rajouri Garden,Generally safe for evening outings,good,2,0,,0,85,Safe
+98,igi-airport-area,IGI Airport Area,Well-lit highway with CCTV monitoring,excellent,1,1,,0,100,Safe
+99,igi-airport-area,IGI Airport Area,Heavy security near terminal areas,excellent,1,1,,0,100,Safe
+100,igi-airport-area,IGI Airport Area,24x7 police patrol on airport road,excellent,1,1,,0,100,Safe
+101,igi-airport-area,IGI Airport Area,Very safe corridor for travelers,excellent,1,1,,0,100,Safe

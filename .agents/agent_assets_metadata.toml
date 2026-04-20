@@ -54,3 +54,21 @@ id = "v-gu-21cr7ppddEClsqkJ"
 uri = "file://graphs/graph9_safety_improvement.png"
 type = "image"
 title = "Graph 9 — Safety Improvement: Sentinel vs Baseline"
+
+[[outputs]]
+id = "ClX0WurW2OZ6udhmwPKBj"
+uri = "file://graphs/sentinel_dataset_areas.csv"
+type = "table"
+title = "Dataset 1 — Areas (25 rows) — Main locality data with scores & features"
+
+[[outputs]]
+id = "oTt7La7xdP5bn6jlr3lpB"
+uri = "file://graphs/sentinel_dataset_reviews.csv"
+type = "table"
+title = "Dataset 2 — Reviews (101 rows) — One row per Google Maps review"
+
+[[outputs]]
+id = "kYp_1wuXZULewIYFEn8gj"
+uri = "file://graphs/sentinel_dataset_routes.csv"
+type = "table"
+title = "Dataset 3 — Routes (8 rows) — Fastest vs Safest route pairs"
