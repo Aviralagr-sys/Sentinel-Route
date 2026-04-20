@@ -1,0 +1,56 @@
+uploads = []
+generated = []
+
+[[outputs]]
+id = "_9Om15MyTsl4fzwgJdTzk"
+uri = "file://graphs/graph1_nlp_accuracy_f1.png"
+type = "image"
+title = "Graph 1 — NLP Model: Accuracy & F1 Comparison"
+
+[[outputs]]
+id = "9HxzMQ_6HKUDwj-TgYhYp"
+uri = "file://graphs/graph2_nlp_inference_time.png"
+type = "image"
+title = "Graph 2 — NLP Model: Inference Time"
+
+[[outputs]]
+id = "JVNp38ge4pATZj3NsaGRt"
+uri = "file://graphs/graph3_ablation_accuracy.png"
+type = "image"
+title = "Graph 3 — Ablation Study: Accuracy Progression"
+
+[[outputs]]
+id = "xdqljzPkCYXVIiwkg_aHF"
+uri = "file://graphs/graph4_ablation_mae.png"
+type = "image"
+title = "Graph 4 — Ablation Study: MAE Reduction"
+
+[[outputs]]
+id = "CHWBRxXjS28-ZURuy7Alo"
+uri = "file://graphs/graph5_ablation_precision_recall.png"
+type = "image"
+title = "Graph 5 — Ablation Study: Precision & Recall"
+
+[[outputs]]
+id = "wg9JCdWolvIy9Xa4sL5V9"
+uri = "file://graphs/graph6_accuracy_by_review_type.png"
+type = "image"
+title = "Graph 6 — Accuracy by Review Type"
+
+[[outputs]]
+id = "MQJ81WSkqDqUetVgKxSFP"
+uri = "file://graphs/graph7_error_analysis.png"
+type = "image"
+title = "Graph 7 — Error Analysis: Misclassification Categories"
+
+[[outputs]]
+id = "fn70nOMwnSRXLnuiMytZc"
+uri = "file://graphs/graph8_cross_validation.png"
+type = "image"
+title = "Graph 8 — 5-Fold Cross-Validation Results"
+
+[[outputs]]
+id = "v-gu-21cr7ppddEClsqkJ"
+uri = "file://graphs/graph9_safety_improvement.png"
+type = "image"
+title = "Graph 9 — Safety Improvement: Sentinel vs Baseline"
