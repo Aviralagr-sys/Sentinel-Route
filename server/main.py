@@ -32,11 +32,15 @@ def compute_safety_score(area: dict, temporal_mode: bool = False) -> int:
     keyword_count = len(area.get("problems", []))
     score = base_score - (keyword_count * DEDUCTION)
 
-    if temporal_mode and area.get("lighting") == "poor":
-        now = datetime.now()
-        hour = now.hour
-        if hour >= 22 or hour < 10:
-            score -= 20
+    if temporal_mode:
+        lighting = area.get("lighting", "moderate")
+        patrol = area.get("police_patrol", False)
+        if lighting == "poor":
+            score -= 25
+        elif lighting == "moderate":
+            score -= 10
+        if not patrol:
+            score -= 8
 
     return max(score, 0)
 

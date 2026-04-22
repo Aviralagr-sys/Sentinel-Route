@@ -95,29 +95,6 @@ function App() {
             <div className="w-3 h-3 rounded-full bg-red-500" />
             <span className="text-xs text-gray-600">Unsafe (&lt;40)</span>
           </div>
-          <div className="w-px h-4 bg-gray-300" />
-          <a
-            href="/comparison.html"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="flex items-center gap-1.5 text-xs font-semibold text-teal-700 hover:text-teal-900 transition-colors bg-teal-50 hover:bg-teal-100 px-2.5 py-1 rounded-md border border-teal-200"
-          >
-            <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
-              <line x1="18" y1="20" x2="18" y2="10"/><line x1="12" y1="20" x2="12" y2="4"/><line x1="6" y1="20" x2="6" y2="14"/>
-            </svg>
-            Compare Models
-          </a>
-          <a
-            href="/scores.html"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="flex items-center gap-1.5 text-xs font-semibold text-indigo-700 hover:text-indigo-900 transition-colors bg-indigo-50 hover:bg-indigo-100 px-2.5 py-1 rounded-md border border-indigo-200"
-          >
-            <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
-              <circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/>
-            </svg>
-            Model Scores
-          </a>
         </div>
       </div>
       <div className="w-[380px] border-l border-gray-200 shadow-lg flex-shrink-0">
