@@ -78,22 +78,23 @@ function App() {
           selectedRoute={selectedRoute}
           onAreaClick={handleAreaClick}
         />
-        <div className="absolute top-4 left-14 z-[1000] bg-white/90 backdrop-blur-sm rounded-lg shadow-lg px-3 py-2 flex items-center gap-3">
+        <div className="absolute top-4 left-14 z-[1000] bg-white/95 backdrop-blur-md rounded-xl shadow-lg ring-1 ring-slate-200 px-3.5 py-2.5 flex items-center gap-4">
+          <div className="text-[10px] font-bold text-slate-500 uppercase tracking-wider pr-2 border-r border-slate-200">Safety Index</div>
           <div className="flex items-center gap-1.5">
-            <div className="w-3 h-3 rounded-full bg-green-500" />
-            <span className="text-xs text-gray-600">Safe (80+)</span>
+            <div className="w-2.5 h-2.5 rounded-full bg-emerald-500 ring-2 ring-emerald-200" />
+            <span className="text-[11px] font-medium text-slate-700">Safe <span className="text-slate-400 tabular-nums">80+</span></span>
           </div>
           <div className="flex items-center gap-1.5">
-            <div className="w-3 h-3 rounded-full bg-yellow-500" />
-            <span className="text-xs text-gray-600">Moderate (60-79)</span>
+            <div className="w-2.5 h-2.5 rounded-full bg-amber-500 ring-2 ring-amber-200" />
+            <span className="text-[11px] font-medium text-slate-700">Moderate <span className="text-slate-400 tabular-nums">60–79</span></span>
           </div>
           <div className="flex items-center gap-1.5">
-            <div className="w-3 h-3 rounded-full bg-orange-500" />
-            <span className="text-xs text-gray-600">Caution (40-59)</span>
+            <div className="w-2.5 h-2.5 rounded-full bg-orange-500 ring-2 ring-orange-200" />
+            <span className="text-[11px] font-medium text-slate-700">Caution <span className="text-slate-400 tabular-nums">40–59</span></span>
           </div>
           <div className="flex items-center gap-1.5">
-            <div className="w-3 h-3 rounded-full bg-red-500" />
-            <span className="text-xs text-gray-600">Unsafe (&lt;40)</span>
+            <div className="w-2.5 h-2.5 rounded-full bg-rose-500 ring-2 ring-rose-200" />
+            <span className="text-[11px] font-medium text-slate-700">Unsafe <span className="text-slate-400 tabular-nums">&lt;40</span></span>
           </div>
         </div>
       </div>
